@@ -2,8 +2,6 @@
 #include "Booking.h"
 #include <iostream>
 
-
-
 Guest::Guest() {
     name = "Unknown";
     contactInfo = "Unknown";
