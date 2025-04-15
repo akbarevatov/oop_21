@@ -18,7 +18,6 @@ Booking::Booking(std::string bookingID, Guest* guest, Room* roomNumber, std::str
     this->endDate = endDate;
 }
 
-
 void Booking::modifyBooking(std::string newStart, std::string newEnd) {
     startDate = newStart;
     endDate = newEnd;
@@ -38,3 +37,4 @@ void Booking::displayBookingInfo() const {
     std::cout << "End Date: " << endDate << "\n";
     std::cout << "----------------------\n";
 }
+
