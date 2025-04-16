@@ -2,7 +2,7 @@
 #define HOTEL_H
 #include <vector>
 #include <string>
-#include "Room.h"
+#include "room.h"
 #include "Guest.h"
 #include "Booking.h"
 #include "Employee.h"
