@@ -1,4 +1,5 @@
 #include "room.h"
+using namespace std;
 Room::Room(int number, const string& status, double price, bool needsMaintenance)
     : roomNumber(number), status(status), price(price), needsMaintenance(needsMaintenance) {}
 int Room::getRoomNumber() const {
@@ -33,4 +34,7 @@ void Room::checkOut() {
 }
 void Room::scheduleMaintenance() {
     needsMaintenance = true;
+}
+bool Room::isAvailable() const {
+    return status == "Available" && !needsMaintenance;
 }
