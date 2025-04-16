@@ -14,9 +14,9 @@ void Hotel::addEmployee(Employee* e) {
     employees.push_back(e);
 }
 void Hotel::createBooking(Guest* g, Room& r) {
-    string bookingID = "BOOK" + to_string(time(0));
-    string startDate = "2025-04-14";
-    string endDate = "2025-04-15";
+    std::string bookingID = "BOOK" + std::to_string(time(0));
+    std::string startDate = "2025-04-14";
+    std::string endDate = "2025-04-15";
     cout << "Creating booking for guest and room: " << r.getRoomNumber() << endl;
     Booking* newBooking = new Booking(bookingID, g, &r, startDate, endDate);
     bookings.push_back(newBooking);
@@ -40,10 +40,10 @@ vector<Feedback*>& Hotel::getFeedbacks() {
     return feedbacks;
 }
 void Hotel::addFeedback(Feedback* feedback) {
-    feedbacks.push_back(feedback);
+    feedbacks.push_back(feedback);  // Add feedback pointer
 }
-void Hotel::createBooking(Guest* g, Room& r, string startDate, string endDate) {
-    string bookingID = to_string(bookings.size() + 1);
+void Hotel::createBooking(Guest* g, Room& r, std::string startDate, std::string endDate) {
+    std::string bookingID = std::to_string(bookings.size() + 1);
     Booking* booking = new Booking(bookingID, g, &r, startDate, endDate);
     bookings.push_back(booking);
 }
