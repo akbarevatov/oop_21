@@ -40,7 +40,7 @@ vector<Feedback*>& Hotel::getFeedbacks() {
     return feedbacks;
 }
 void Hotel::addFeedback(Feedback* feedback) {
-    feedbacks.push_back(feedback);  // Add feedback pointer
+    feedbacks.push_back(feedback); 
 }
 void Hotel::createBooking(Guest* g, Room& r, std::string startDate, std::string endDate) {
     std::string bookingID = std::to_string(bookings.size() + 1);
