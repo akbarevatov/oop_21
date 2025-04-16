@@ -21,6 +21,6 @@ public:
     void checkIn();
     void checkOut();
     void scheduleMaintenance();
+    bool isAvailable() const;
 };
-
 #endif
