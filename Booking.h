@@ -17,9 +17,19 @@ public:
     Booking();
     Booking(std::string bookingID, Guest* guest, Room* roomNumber, std::string startDate, std::string endDate);
 
+
+    std::string getBookingID() const { return bookingID; }
+    Guest* getGuest() const { return guest; }
+    Room* getRoom() const { return roomNumber; }
+    std::string getStartDate() const { return startDate; }
+    std::string getEndDate() const { return endDate; }
+
+
     void modifyBooking(std::string newStart, std::string newEnd);
     void cancelBooking();
     void displayBookingInfo() const;
 };
 
 #endif // BOOKING_H
+
+
