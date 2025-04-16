@@ -9,21 +9,24 @@ public:
     Menu();
     // Starts the main menu loop.
     void displayMenu();
-
+    static void clearInput();
 private:
     // Submenu options:
     void manageRooms();
     void bookingOperations();
     void employeeOperations();
     void guestOperations();
-    void loyaltyOperations();
     void paymentProcessing();
-    void feedbackOperations();
     void generateHotelReport();
     void accessControlOperations();
 
     // Utility method for clearing cin errors.
-    void clearInput();
+
+    void showAdminMenu();
+    void showGuestMenu(Guest* guest);
+
+    // Helper to find guest by name
+    Guest* findGuestByName(const std::string& name);
 };
 
 #endif // MENU_H
