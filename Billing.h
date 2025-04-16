@@ -11,24 +11,25 @@
 #include <ctime>
 using namespace std;
 
+template <typename T>
 class Billing {
 private:
-    double totalAmount;
+    T totalAmount;
     vector<string> expenses; // Stores expense descriptions or amounts
 
 public:
-    Billing() : totalAmount(0.0) {}
+    Billing() : totalAmount(0) {}
 
-    //  Add expense with just amount (method overloading)
-    void addExpense(double amount) {
+    // Add expense with just amount (method overloading)
+    void addExpense(T amount) {
         totalAmount += amount;
-        expenses.push_back("Expense: $" + to_string(amount));
+        expenses.push_back("Expense: $" + to_string(static_cast<double>(amount)));
     }
 
     // Add expense with description and amount (method overloading)
-    void addExpense(const string& description, double amount) {
+    void addExpense(const string& description, T amount) {
         totalAmount += amount;
-        expenses.push_back(description + ": $" + to_string(amount));
+        expenses.push_back(description + ": $" + to_string(static_cast<double>(amount)));
     }
 
     void generateReceipt() {
@@ -42,6 +43,6 @@ public:
         cout << "Thank you for staying with us!" << endl;
     }
 
-    double getTotalAmount() const { return totalAmount; }
+    T getTotalAmount() const { return totalAmount; }
 };
 #endif //BILLING_H
