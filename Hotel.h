@@ -8,6 +8,7 @@
 #include "Employee.h"
 #include "Feedback.h"
 using namespace std;
+class Feedback;
 class Hotel {
 private:
     vector<Room> rooms;
@@ -27,6 +28,6 @@ public:
     vector<Guest*>& getGuests();
     vector<Feedback*>& getFeedbacks();
     void addFeedback(Feedback* feedback);
-    void createBooking(Guest* g, Room& r, string startDate, string endDate);
+    void createBooking(Guest* g, Room& r, std::string startDate, std::string endDate);
 };
 #endif
