@@ -1,4 +1,4 @@
-#include "room.h"
+#include "Room.h"
 using namespace std;
 Room::Room(int number, const string& status, double price, bool needsMaintenance)
     : roomNumber(number), status(status), price(price), needsMaintenance(needsMaintenance) {}
