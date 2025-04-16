@@ -1,4 +1,4 @@
-#include "hotel.h"
+#include "Hotel.h"
 #include <ctime>
 #include <iostream>
 using namespace std;
