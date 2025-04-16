@@ -36,7 +36,7 @@ void Room::scheduleMaintenance() {
     needsMaintenance = true;
 }
 bool Room::isAvailable() const {
-    return status == "Available" && !needsMaintenance;  // Check if the room is available
+    return status == "Available" && !needsMaintenance;  
 }
 void Room::manageRooms() {
     int subChoice = 0;
