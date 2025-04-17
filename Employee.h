@@ -1,7 +1,3 @@
-//
-// Created by User on 4/14/2025.
-//
-
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
 #include <iostream>
@@ -32,3 +28,4 @@ public:
 };
 
 #endif //EMPLOYEE_H
+

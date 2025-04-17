@@ -1,4 +1,3 @@
-
 #ifndef MANAGER_H
 #define MANAGER_H
 #include <iostream>
@@ -15,3 +14,4 @@ public:
     }
 };
 #endif //MANAGER_H
+

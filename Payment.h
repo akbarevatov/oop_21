@@ -1,7 +1,3 @@
-//
-// Created by User on 4/3/2025.
-//
-
 #ifndef PAYMENT_H
 #define PAYMENT_H
 #include <iostream>

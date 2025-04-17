@@ -28,8 +28,9 @@ public:
     void modifyBooking(std::string newStart, std::string newEnd);
     void cancelBooking();
     void displayBookingInfo() const;
+
+    static void bookingOperations();
 };
 
 #endif // BOOKING_H
-
 

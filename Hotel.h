@@ -1,5 +1,6 @@
 #ifndef HOTEL_H
 #define HOTEL_H
+
 #include <vector>
 #include <string>
 #include "Room.h"
@@ -7,6 +8,7 @@
 #include "Booking.h"
 #include "Employee.h"
 #include "Feedback.h"
+
 using namespace std;
 class Feedback;
 class Hotel {
@@ -16,7 +18,9 @@ private:
     vector<Booking*> bookings;
     vector<Guest*> guests;
     vector<Feedback*> feedbacks;
+
     Hotel();
+
 public:
     static Hotel& getInstance();
     void addRoom(const Room& r);
@@ -27,7 +31,10 @@ public:
     vector<Booking*>& getBookings();
     vector<Guest*>& getGuests();
     vector<Feedback*>& getFeedbacks();
-    void addFeedback(Feedback* feedback);
+
+    void addFeedback(Feedback* feedback);  // Add feedback method
     void createBooking(Guest* g, Room& r, std::string startDate, std::string endDate);
 };
+
 #endif
+

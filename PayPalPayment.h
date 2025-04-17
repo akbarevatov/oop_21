@@ -1,7 +1,3 @@
-//
-// Created by User on 4/3/2025.
-//
-
 #ifndef PAYPALPAYMENT_H
 #define PAYPALPAYMENT_H
 #include <iostream>
@@ -28,3 +24,4 @@ public:
     }
 };
 #endif //PAYPALPAYMENT_H
+

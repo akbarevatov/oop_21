@@ -1,7 +1,3 @@
-//
-// Created by User on 4/3/2025.
-//
-
 #ifndef CREDITCARDPAYMENT_H
 #define CREDITCARDPAYMENT_H
 #include <iostream>
@@ -31,3 +27,4 @@ public:
     }
 };
 #endif //CREDITCARDPAYMENT_H
+

@@ -2,6 +2,7 @@
 #define ROOM_H
 #include <string>
 using namespace std;
+
 class Room {
 private:
     int roomNumber;
@@ -21,8 +22,10 @@ public:
     void checkIn();
     void checkOut();
     void scheduleMaintenance();
-    bool isAvailable() const;
+    bool isAvailable() const;  // Add this method
     static void manageRooms();
 };
 
 #endif
+
+

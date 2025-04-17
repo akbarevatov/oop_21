@@ -1,6 +1,7 @@
 #ifndef ACCESSCONTROL_H
 #define ACCESSCONTROL_H
 #include <iostream>
+#include <map>
 using namespace std;
 
 class AccessControl {
