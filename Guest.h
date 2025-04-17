@@ -24,7 +24,10 @@ public:
     void addBooking(Booking* booking);
 
     std::string getName() const;
+
+    std::string getID() const;
+
+    static void guestOperations();
 };
 
 #endif // GUEST_H
-
