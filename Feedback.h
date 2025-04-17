@@ -2,21 +2,16 @@
 #define FEEDBACK_H
 
 #include <string>
-#include <vector>
 #include "Guest.h"
+#include "Hotel.h"
 
 class Feedback {
-private:
-    Guest guest;                 // Guest who gave the feedback
-    std::string review;          // Review text
-    static std::vector<Feedback> feedbacks; // Static vector of feedbacks
-
 public:
-    Feedback(Guest guest, const std::string& review);
+    static void viewFeedbacks();
 
-    void sendFeedback(const Guest& guest, const std::string& review);
-    void printFeedback(const Feedback& feedback) const;
-    static void viewFeedbacks(); // Static function to view all feedbacks
+    static void sendFeedback(string guestID);
+
+    static void feedbackOperations();
 };
 
-#endif //FEEDBACK_H
+#endif // FEEDBACK_H
